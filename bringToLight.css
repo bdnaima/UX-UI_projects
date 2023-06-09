@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+.banner-tree {
+  background-image: url("./assets/images/tree.jpg");
+  width: 100%;
+  height: 90%;
+  background-attachment: fixed;
+}
+
+.banner-tree h1 {
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Design Process */
+.design-process h5 {
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn.btn-primary.active {
+  background-color: #fff;
+  border-color: #3a939a;
+}
+
+.btn a {
+  color: #3a939a;
+  text-decoration: none;
+}
+.btn a:hover {
+  color: #fff;
+}
+.btn.btn-primary.active:hover {
+  background-color: #3a939a;
+  border-color: #747575;
+}
+
+/* Breakpoints Media queries*/
+@media (min-width: 767.98px) {
+}

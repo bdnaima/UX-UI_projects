@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "DustinSans-Regular";
+  src: url("./webfonts/woff/DustinSans-Regular.woff") format("woff"),
+    url("./webfonts/woff2/DustinSans-Regular.woff2") format("woff2");
+}
+
+body {
+  font-family: "DustinSans-Regular", sans-serif;
+}
+
+/* Banner */
+.banner {
+  background-color: #4acdbd;
+  color: #fff;
+}
+
+.separator-right {
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  background-color: #fff;
+}
+.separator-left {
+  clip-path: polygon(100% 100%, 0 100%, 0 0);
+  background-color: #fff;
+}
+
+.btn-brown {
+  background-color: #13b190;
+  border: none;
+  width: 11rem;
+  padding: 0.5rem;
+  align-self: flex-end;
+}
+
+.btn-brown:hover {
+  opacity: 0.9;
+  background-color: #e49a7f;
+}
+
+.btn-brown.active {
+  background-color: #13b190 !important;
+}
+
+.banner-wide {
+  display: none;
+}
+
+/* Divider **/
+.divider {
+  background-color: #4acdbd;
+  color: #fff;
+}
+
+/* Cards section - Animation **/
+.card {
+  height: 15rem;
+  transition: 0.5s;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  height: 40rem;
+}
+.card-small:hover {
+  height: 46rem;
+}
+
+.card-title {
+  margin-left: 1rem;
+}
+
+.card-body {
+  transition: opacity 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card-img-top {
+  height: 15rem;
+  object-fit: cover;
+}
+
+/* Breakpoints Media queries*/
+@media (max-width: 767.98px) {
+  .banner-narrow {
+    display: none;
+  }
+  .banner-wide {
+    display: block;
+  }
+
+  .divider {
+    text-align: center;
+  }
+}
