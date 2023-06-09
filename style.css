@@ -46,6 +46,11 @@ body {
   background-color: #13b190 !important;
 }
 
+.btn.active a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
 .banner-wide {
   display: none;
 }
