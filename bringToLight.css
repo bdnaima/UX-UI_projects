@@ -37,5 +37,10 @@
 }
 
 /* Breakpoints Media queries*/
-@media (min-width: 767.98px) {
+@media (max-width: 767.98px) {
+  .launch {
+    text-align: center;
+  }
+  .design {
+  }
 }
