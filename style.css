@@ -55,10 +55,15 @@ body {
   display: none;
 }
 
+.description {
+  width: 45%;
+}
+
 /* Divider **/
 .divider {
   background-color: #4acdbd;
   color: #fff;
+  width: 84%;
 }
 
 /* Cards section - Animation **/
@@ -107,6 +112,11 @@ body {
   }
   .banner-wide {
     display: block;
+  }
+
+  .description {
+    width: 80%;
+    margin: auto;
   }
 
   .divider {
