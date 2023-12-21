@@ -73,10 +73,6 @@
   font-weight: 200;
 }
 
-.design-grid p {
-  color: gray;
-}
-
 .design-grid-description {
   display: flex;
 }
@@ -111,6 +107,9 @@
 
 h1 {
   font-weight: 300;
+}
+p {
+  color: gray;
 }
 
 /* Breakpoints Media queries*/
