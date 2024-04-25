@@ -1,120 +1,213 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 
-.banner-tree {
-  background-image: url("./assets/images/tree.jpg");
-  width: 100%;
-  height: 90%;
-  background-attachment: fixed;
+body {
+  width: 70%;
+  margin: auto;
 }
 
-.banner-tree h1 {
-  font-size: 2rem;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  font-weight: bold;
+.heading {
+  margin-top: 4rem;
 }
 
+.laptop-banner {
+  width: 50%;
+}
+
+/* Divider */
 .container-description {
   display: flex;
   justify-content: space-around;
 }
 
-.margin-role {
-  margin-left: -2rem;
+.project-details h5,
+p {
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.margin-tools {
-  margin-left: -8rem;
+.project-details p {
+  font-weight: 100;
 }
 
-.margin-duration {
-  margin-left: -10rem;
+.project-short-info {
+  margin-top: 4rem;
 }
 
-.image-styles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.project-heading {
+  font-size: 22px;
+  font-weight: 400;
 }
-
-.description {
-  width: 40%;
-}
-.description h2 {
+.project-paragraph {
+  font-size: 15px;
   font-weight: 300;
+  width: 60%;
 }
-.description p {
-  color: gray;
+
+.description h2 {
+  font-size: 20px;
+}
+
+/* Overview */
+
+.section-title {
+  font-size: 20px;
+  color: #422fff;
 }
 
 /* Design Process */
 .design-process {
-  margin-top: 5rem;
-  margin-bottom: 4rem;
-  margin-left: 10rem;
   font-size: 1.1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.design-process h2 {
-  font-weight: 300;
 }
 
 .design-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .design-grid h2 {
+  font-size: 19px;
   font-weight: 200;
 }
 
+.design-grid p {
+  font-weight: 300;
+}
+
 .design-grid-description {
-  display: flex;
+  padding: 1rem 1rem 1rem 0;
 }
 
-.icon-styles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.design-grid-description img {
+  width: 10%;
+  margin-bottom: 10px;
 }
 
-.user-flow {
-  display: flex;
+/* Horizontal Line */
+
+.line {
+  border-bottom: 3px solid lightgray;
+  margin-top: 4rem;
+}
+
+/* Style Guide */
+.style-guide {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0.5rem 1rem 1rem;
+}
+.style-guide img {
+  width: 50%;
+}
+
+/* Wireframes and prototypes */
+.wire-proto-frames p {
+  width: 49%;
+}
+
+.prototype img {
+  width: 49%;
+  height: 27.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Buttons */
-.btn.btn-primary.active {
-  background-color: #fff;
-  border-color: #3a939a;
-}
 
-.btn a {
-  color: #3a939a;
-  text-decoration: none;
-}
-.btn a:hover {
+a {
   color: #fff;
-}
-.btn.btn-primary.active:hover {
+  text-decoration: none;
+  text-align: center;
   background-color: #3a939a;
-  border-color: #747575;
+  border: 1px solid #3a939a;
+  border-radius: 5px;
+  width: 20%;
+  padding: 0.4rem;
+
+  width: 28%;
+}
+a:hover {
+  color: #3a939a;
+  background-color: #fff;
 }
 
-h1 {
-  font-weight: 300;
-}
-p {
-  color: gray;
+footer {
+  margin: 4rem 0 1rem;
 }
 
 /* Breakpoints Media queries*/
-@media (max-width: 767.98px) {
-  .launch {
+@media (max-width: 980px) {
+  .heading h1,
+  h2 {
+    font-size: 20px;
     text-align: center;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .banner-laptop {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .project-short-info {
+    margin-top: 1rem;
+  }
+  .project-paragraph {
+    width: 100%;
+  }
+
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Design Process */
+  .design-process {
+    flex-direction: column;
+  }
+  .design-process img {
+    width: 100%;
+  }
+
+  .design-grid {
+    display: inline;
+  }
+
+  /* User Journey */
+  .user-journey {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Wireframes and Protypes */
+  .wire-proto-frames {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wire-proto-frames p {
+    width: 100%;
+  }
+
+  .prototype img {
+    height: 18rem;
+  }
+
+  /* Results */
+  .project-results {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .laptop-banner {
+    height: 16rem;
   }
 }
