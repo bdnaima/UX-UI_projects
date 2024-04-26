@@ -8,6 +8,12 @@ body {
 .heading {
   margin-top: 4rem;
 }
+.heading h1 {
+  font-weight: 300;
+}
+.heading h2 {
+  font-weight: 100;
+}
 
 .laptop-banner {
   width: 50%;
