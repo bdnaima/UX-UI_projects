@@ -101,18 +101,21 @@ p {
   padding: 0.5rem 1rem 1rem;
 }
 .style-guide img {
-  width: 50%;
+  width: 100%;
 }
 
 /* Wireframes and prototypes */
-.wire-proto-frames p {
-  width: 49%;
-}
 
 .prototype img {
-  width: 49%;
-  height: 27.5rem;
+  width: 17%;
+  height: 12rem;
+  margin: 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mobile img {
+  height: 20rem;
+  box-shadow: none;
 }
 
 /* Buttons */
@@ -126,12 +129,22 @@ a {
   border-radius: 5px;
   width: 20%;
   padding: 0.4rem;
-
   width: 28%;
 }
 a:hover {
   color: #3a939a;
   background-color: #fff;
+}
+
+.figma-link {
+  background-color: #fff;
+  text-decoration: underline;
+  color: #000;
+  border: none;
+  padding: 0;
+}
+.figma-link:hover {
+  color: #422fff;
 }
 
 footer {
