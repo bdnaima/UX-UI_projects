@@ -80,7 +80,9 @@ p {
 }
 
 .design-grid-description {
-  padding: 1rem 1rem 1rem 0;
+  padding: 1rem;
+  border: 1px solid;
+  margin: 0.5rem;
 }
 
 .design-grid-description img {
